@@ -1,0 +1,15 @@
+app-nav {
+    height: 60px;
+    /* or your navbar height */
+    flex-shrink: 0;
+}
+
+/* or if fixed position */
+app-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1000;
+}

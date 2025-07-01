@@ -1,0 +1,6 @@
+section {
+    min-height: 100vh;
+    /* 60px navbar height */
+    scroll-snap-align: start;
+    /* optional for smooth section snapping */
+}
