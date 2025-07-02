@@ -102,13 +102,12 @@
                 <article class="timeline-entry" *ngFor="let exp of experiences; let i = index"
                     [ngClass]="{ '': i % 2 === 0, 'left-aligned': i % 2 !== 0 }">
                     <div class="timeline-entry-inner">
-                        <time datetime="2014-01-10T03:45"
-                            class="timeline-time"><span>{{exp.start_date}}</span><span>{{exp.end_date}}</span></time>
+                        <time class="timeline-time"><span>{{exp.start_date}}</span><span>{{exp.end_date}}</span></time>
                         <div class="timeline-icon" style="background-color: #778DA9;"><i class="fa fa-exclamation"></i>
                         </div>
                         <div class="timeline-label">
                             <h4 class="timeline-title">{{exp.job_title}}</h4>
-
+                            <p><strong>{{exp.company}} &#183; {{exp.location}}</strong></p>
                             <p>{{exp.description}}</p>
                         </div>
                     </div>

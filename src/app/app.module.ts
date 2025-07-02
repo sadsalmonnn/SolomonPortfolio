@@ -11,6 +11,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectcardComponent } from './projectcard/projectcard.component';
+import { CustomScrollbarComponent } from './custom-scrollbar/custom-scrollbar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProjectcardComponent } from './projectcard/projectcard.component';
     AboutmeComponent,
     ExperienceComponent,
     ProjectsComponent,
-    ProjectcardComponent
+    ProjectcardComponent,
+    CustomScrollbarComponent
   ],
   imports: [
     BrowserModule,
