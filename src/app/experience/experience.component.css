@@ -1,72 +1,3 @@
-/* .timeline-container {
-    position: relative;
-}
-
-.timeline {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    background-color: #bbb;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -2px;
-}
-
-.timeline-item {
-    padding: 1rem 2rem;
-    position: relative;
-    width: 50%;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: -10px;
-    background-color: white;
-    border: 3px solid #0d6efd;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.timeline-item.left {
-    left: 0;
-    text-align: right;
-}
-
-.timeline-item.left::before {
-    right: -10px;
-}
-
-.timeline-item.right {
-    left: 50%;
-    text-align: left;
-}
-
-.timeline-item.right::before {
-    left: -10px;
-}
-
-.timeline-content {
-    background-color: #f8f9fa;
-    padding: 1rem;
-    border-radius: 8px;
-    position: relative;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-} */
-
-
 .timeline-centered {
     position: relative;
     margin-bottom: 30px;
@@ -95,7 +26,7 @@
     position: absolute;
     display: block;
     width: 7px;
-    background: #ffffff;
+    background: #E0E1DD;
     left: 50%;
     top: 20px;
     bottom: 20px;
@@ -287,15 +218,22 @@
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
     position: relative;
-    background: #ffffff;
+    background: #212f45;
     padding: 1.7em;
     margin-left: 85px;
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    border-radius: 21px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
+}
+
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label.bg-red {
@@ -423,7 +361,7 @@
     height: 0;
     border-style: solid;
     border-width: 9px 9px 9px 0;
-    border-color: transparent #ffffff transparent transparent;
+    border-color: transparent #212f45 transparent transparent;
     left: 0;
     top: 20px;
     margin-left: -9px;
