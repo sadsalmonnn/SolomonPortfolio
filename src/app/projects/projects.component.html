@@ -1,24 +1,23 @@
-<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <div class="container d-flex flex-column align-items-center text-center p-0 m-0">
+<div class="d-flex justify-content-center align-items-center py-5" style="min-height: 100vh;">
+    <div class="container px-4">
 
-        <div class="row w-100 mb-4">
-            <div class="col">
-                <h5 style="letter-spacing: 0.2em;">Projects</h5>
+        <!-- Section Title -->
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h5 class="text-uppercase" style="letter-spacing: 0.2em;">Projects</h5>
             </div>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 mb-4" style="max-width: 380px; min-width:380px">
-                <app-projectcard [projectName]="'Sample Angular App'"></app-projectcard>
+        <!-- Project Cards Grid -->
+        <div class="row justify-content-center g-4">
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                <app-projectcard [project]="project1"></app-projectcard>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" style="max-width: 380px; min-width:380px">
-                <app-projectcard [projectName]="'Sample Angular App 1'"></app-projectcard>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                <app-projectcard [project]="project2"></app-projectcard>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" style="max-width: 380px; min-width:380px">
-                <app-projectcard [projectName]="'Sample Angular App 2'"></app-projectcard>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" style="max-width: 380px; min-width:380px">
-                <app-projectcard [projectName]="'Sample Angular App 3'"></app-projectcard>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                <app-projectcard [project]="project3"></app-projectcard>
             </div>
         </div>
 
