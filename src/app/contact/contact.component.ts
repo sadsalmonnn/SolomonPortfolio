@@ -14,15 +14,15 @@ export class ContactComponent {
   };
 
   onSubmit(): void {
-    const serviceID = 'service_jepg0x8';            // Your actual EmailJS service ID
-    const templateID = 'template_iz6ol6d';           // Replace with your actual template ID
-    const publicKey = '29nzorA1gQmsNCvNb';          // Your public key
+    const serviceID = 'service_jepg0x8';
+    const templateID = 'template_iz6ol6d';
+    const publicKey = '29nzorA1gQmsNCvNb';
 
     const templateParams = {
       name: this.contactForm.name,
       email: this.contactForm.email,
       message: this.contactForm.message,
-      time: new Date().toLocaleString()            // Optional: for {{time}} in your template
+      time: new Date().toLocaleString()
     };
 
     emailjs.send(serviceID, templateID, templateParams, publicKey)
