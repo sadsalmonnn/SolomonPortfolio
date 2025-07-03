@@ -15,6 +15,7 @@ import { CustomScrollbarComponent } from './custom-scrollbar/custom-scrollbar.co
 import { ContactComponent } from './contact/contact.component';
 
 import { FormsModule } from '@angular/forms';
+import { ScrollInViewDirective } from './directives/scroll-in-view.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     ProjectsComponent,
     ProjectcardComponent,
     CustomScrollbarComponent,
-    ContactComponent
+    ContactComponent,
+    ScrollInViewDirective
   ],
   imports: [
     BrowserModule,

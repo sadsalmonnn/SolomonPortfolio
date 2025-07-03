@@ -1,21 +1,107 @@
-/* div {
-    background: linear-gradient(-45deg, #0d1b2a, #1b263b, #415a77, #778da9);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
-    height: 100vh;
-    color: #e0e1dd;
+/* Wave animation center (if used elsewhere) */
+.wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
 }
 
-@keyframes gradient {
+/* Animated span inside h5 */
+h5 span {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+h5:hover span {
+    color: #27ae60;
+    transform: translateY(-30px);
+}
+
+/* Body background */
+body {
+    position: relative;
+    background-color: #e10065;
+}
+
+/* Scroll down indicator container */
+#sd-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* Arrows */
+.arrow {
+    position: relative;
+    width: 42px;
+    height: 16px;
+    opacity: 0;
+}
+
+.arrow::before,
+.arrow::after {
+    content: "";
+    width: 21px;
+    height: 2px;
+    background-color: #9B5DE5;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.arrow::before {
+    transform: rotate(45deg) translateX(25%);
+}
+
+.arrow::after {
+    transform: rotate(-45deg) translateX(-25%);
+}
+
+.arrow:nth-child(1) {
+    top: -50px;
+    opacity: 1;
+    animation: arrow2 1s ease 0s infinite;
+}
+
+.arrow:nth-child(2) {
+    top: -25px;
+    animation: arrow1 1s ease 0.25s infinite;
+}
+
+/* Arrow animations */
+@keyframes arrow1 {
     0% {
-        background-position: 0% 50%;
+        opacity: 0;
+        top: -25px;
     }
 
     50% {
-        background-position: 100% 50%;
+        opacity: 1;
     }
 
     100% {
-        background-position: 0% 50%;
+        opacity: 0;
+        top: 0px;
     }
-} */
+}
+
+@keyframes arrow2 {
+    0% {
+        opacity: 0;
+        top: -35px;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        top: -10px;
+    }
+}

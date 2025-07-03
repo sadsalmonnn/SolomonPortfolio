@@ -1,30 +1,32 @@
 <nav class="navbar navbar-expand-md custom-navbar fixed-top">
-    <div class="container d-flex justify-content-between align-items-center">
-        <span class="navbar-brand mb-0 h5" style="color: #9B5DE5">Solomon Ador-Dionisio</span>
-        <ul class="nav">
-            <li class="nav-item itemcustom">
-                <a class="nav-link text-white" (click)="scrollToTop()">Home</a>
-            </li>
-            <li class="nav-item itemcustom">
-                <a class="nav-link text-white" (click)="scrollToSection('about')">About Me</a>
-            </li>
-            <li class="nav-item itemcustom">
-                <a class="nav-link text-white" (click)="scrollToSection('experience')">Experience</a>
-            </li>
-            <li class="nav-item itemcustom">
-                <a class="nav-link text-white" (click)="scrollToSection('projects')">Projects</a>
-            </li>
-            <li class="nav-item itemcustom">
-                <a class="nav-link text-white" (click)="scrollToSection('contact')">Contact</a>
-            </li>
-        </ul>
+    <div class="container">
+        <span class="navbar-brand mb-0 h5" style="color: #9B5DE5;">Solomon Ador-Dionisio</span>
+
+        <!-- Toggler button for mobile -->
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item itemcustom">
+                    <a class="nav-link text-white" (click)="scrollToTop()">Home</a>
+                </li>
+                <li class="nav-item itemcustom">
+                    <a class="nav-link text-white" (click)="scrollToSection('about')">About Me</a>
+                </li>
+                <li class="nav-item itemcustom">
+                    <a class="nav-link text-white" (click)="scrollToSection('experience')">Experience</a>
+                </li>
+                <li class="nav-item itemcustom">
+                    <a class="nav-link text-white" (click)="scrollToSection('projects')">Projects</a>
+                </li>
+                <li class="nav-item itemcustom">
+                    <a class="nav-link text-white" (click)="scrollToSection('contact')">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
-
-<!-- Scroll bar under navbar -->
-<div class="scroll-progress-container">
-    <div class="scroll-progress-bar" [ngStyle]="{
-    width: scrollWidth + '%',
-    backgroundColor: borderColor
-  }"></div>
-</div>

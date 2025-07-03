@@ -32,7 +32,25 @@ export class ProjectsComponent {
     tags: ['Python', 'OS'],
     picture: 'assets/expimages/treemap.png',
     github: 'https://github.com/sadsalmonnn/Trees-for-Treemap.git'
+  },
+  {
+    id: 4,
+    name: 'Video Game Sales Analysis',
+    description: 'This project analyzes video game sales data, generating visualizations like line charts, pie charts, and bar graphs to uncover trends by publisher, year, region, genre, and platform.',
+    tags: ['Python', 'Matplotlib', 'CSV', 'Data Visualization'],
+    picture: 'assets/expimages/videogame.png',
+    github: 'https://github.com/sadsalmonnn/Video-Games-Sales-Analysis.git'
+  },
+  {
+    id: 5,
+    name: 'Othello Game - Java',
+    description: 'A Java implementation of the classic Othello board game, featuring full game logic, AI players (random and greedy), and statistical simulation to analyze win probabilities using bootstrapping.',
+    tags: ['Java', 'OOP', 'Simulation'],
+    picture: 'assets/expimages/othello.png',
+    github: 'https://github.com/sadsalmonnn/Othello-Game.git'
   }
+
+
   ];
 
 }

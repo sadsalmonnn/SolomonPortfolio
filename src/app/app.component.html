@@ -1,5 +1,4 @@
-<div class="wrapper custom-background d-flex flex-column min-vh-100 position-relative">
-  <!-- Background bubbles -->
+<!-- <div class="wrapper custom-background d-flex flex-column min-vh-100 position-relative">
   <div class="bg-bubbles">
     <div class="bubble" *ngFor="let bubble of bubbles" [ngStyle]="{
         '--x': bubble.x,
@@ -15,7 +14,6 @@
       }"></div>
   </div>
 
-  <!-- Main content starts here -->
   <div class="content-wrapper">
     <app-nav></app-nav>
     <section class="main-section">
@@ -31,6 +29,45 @@
       <app-projects></app-projects>
     </section>
     <section id="contact" class="main-section">
+      <app-contact></app-contact>
+    </section>
+  </div>
+</div> -->
+
+<div class="wrapper custom-background d-flex flex-column min-vh-100 position-relative">
+  <!-- ✅ Keep background and navbar outside of scroll-in-view sections -->
+  <div class="bg-bubbles">
+    <div class="bubble" *ngFor="let bubble of bubbles" [ngStyle]="{
+        '--x': bubble.x,
+        '--y': bubble.y,
+        '--size': bubble.size + 'px',
+        '--duration': bubble.duration + 's',
+        '--hue': bubble.hue,
+        '--blur-start': bubble.blurStart + 'px',
+        '--blur-end': bubble.blurEnd + 'px',
+        '--dx': bubble.dx + 'px',
+        '--dy': bubble.dy + 'px',
+        '--opacity': bubble.opacity
+      }"></div>
+  </div>
+
+  <app-nav></app-nav>
+
+  <!-- ✅ Animate only main content sections -->
+  <div class="content-wrapper">
+    <section class="main-section scroll-section" appScrollInView>
+      <app-home></app-home>
+    </section>
+    <section class="main-section scroll-section" id="about" appScrollInView>
+      <app-aboutme></app-aboutme>
+    </section>
+    <section class="main-section scroll-section" id="experience" appScrollInView>
+      <app-experience></app-experience>
+    </section>
+    <section class="main-section scroll-section" id="projects" appScrollInView>
+      <app-projects></app-projects>
+    </section>
+    <section class="main-section scroll-section" id="contact" appScrollInView>
       <app-contact></app-contact>
     </section>
   </div>

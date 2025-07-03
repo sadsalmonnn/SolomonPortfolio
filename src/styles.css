@@ -4,13 +4,15 @@
     font-family: "poppins", sans-serif;
 }
 
-@font-face {
-    font-family: 'Inter';
-    /* Choose a name for your font */
-    src: url('assets/fonts/inter.ttf') format('truetype');
-    /* Path to your font file */
-    font-weight: normal;
-    /* Adjust as needed */
-    font-style: normal;
-    /* Adjust as needed */
+
+.scroll-section {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.6s ease-in-out;
+    will-change: opacity, transform;
+}
+
+.scroll-section.active {
+    opacity: 1;
+    transform: scale(1);
 }

@@ -50,3 +50,8 @@
 .itemcustom:hover::after {
     width: 100%;
 }
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
