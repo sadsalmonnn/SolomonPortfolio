@@ -21,7 +21,7 @@
     padding: 0 10px;
     height: 30px;
     width: fit-content;
-    font-size: 14px;
+    font-size: 0.8rem;
     line-height: 30px;
     border-radius: 25px;
     background-color: #778DA9;
@@ -41,12 +41,12 @@
 }
 
 @media (max-width: 768px) {
-    .display-4 {
+    /* .display-4 {
         font-size: 2rem;
-    }
+    } */
 
     .tag {
-        font-size: 12px;
+        /* font-size: 12px; */
         padding: 0 8px;
         height: 26px;
         line-height: 26px;

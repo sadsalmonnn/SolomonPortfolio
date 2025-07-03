@@ -55,3 +55,19 @@
     border: none;
     background: transparent;
 }
+
+@media (min-width: 768px) {
+    .navbar-collapse {
+        display: flex !important;
+        justify-content: flex-end;
+    }
+
+    .navbar-nav {
+        flex-direction: row !important;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 1rem;
+    }
+}

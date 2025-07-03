@@ -5,12 +5,12 @@
     <!-- Content -->
     <div class="card-content flex-grow-1 d-flex flex-column justify-content-between">
         <div>
-            <h5 class="card-title fw-bold">{{ project.name }}</h5>
+            <h5 class="card-title fw-bold" style="font-size: 1.3rem">{{ project.name }}</h5>
             <p class="card-text">{{ project.description }}</p>
         </div>
 
         <a *ngIf="project.github" [href]="project.github" target="_blank" rel="noopener noreferrer"
-            class="btn cta-button mt-3">
+            class="btn cta-button mt-3" style="font-size: 1rem;">
             <i class="bi bi-github"></i> More on GitHub
         </a>
     </div>
