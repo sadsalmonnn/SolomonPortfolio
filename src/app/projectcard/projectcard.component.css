@@ -13,3 +13,17 @@
         padding: 0.2em 0.6em;
     }
 }
+
+.cta-button {
+    min-width: 160px;
+    border-color: #778da9;
+    border-width: 2.5px;
+    border-radius: 30px;
+    color: #e0e1dd;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #778da9;
+    color: white;
+}

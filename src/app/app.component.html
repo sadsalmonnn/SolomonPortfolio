@@ -1,24 +1,37 @@
-<div class="wrapper d-flex flex-column min-vh-100">
-  <div class="wrapper">
+<div class="wrapper custom-background d-flex flex-column min-vh-100">
+  <!-- Background bubbles -->
+  <div class="bg-bubbles">
+    <div class="bubble" *ngFor="let bubble of bubbles" [ngStyle]="{
+        '--x': bubble.x,
+        '--y': bubble.y,
+        '--size': bubble.size + 'px',
+        '--duration': bubble.duration + 's',
+        '--hue': bubble.hue,
+        '--blur-start': bubble.blurStart + 'px',
+        '--blur-end': bubble.blurEnd + 'px',
+        '--dx': bubble.dx + 'px',
+        '--dy': bubble.dy + 'px',
+        '--opacity': bubble.opacity
+      }"></div>
+  </div>
+
+  <div class="wrapper" style="position: relative; z-index: 1;">
     <app-nav></app-nav>
   </div>
 
-  <section class="main-section" style="background-color: rgb(146, 169, 189);">
-    <app-home class="flex-grow-1 d-flex flex-column">
-
-    </app-home>
+  <section class="main-section">
+    <app-home></app-home>
   </section>
 
+  <section id="about" class="main-section">
+    <app-aboutme></app-aboutme>
+  </section>
 
-  <section class="main-section" style="background-color: rgb(76, 123, 165);"><app-aboutme></app-aboutme></section>
-
-
-
-  <section class="main-section" style="background-color: rgb(29, 69, 104);">
+  <section id="experience" class="main-section">
     <app-experience></app-experience>
   </section>
 
-  <section class="main-section" style="background-color: rgb(82, 82, 82);">
+  <section id="projects" class="main-section">
     <app-projects></app-projects>
   </section>
 </div>

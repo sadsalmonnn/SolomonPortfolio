@@ -87,8 +87,7 @@
 
 
 
-<div class="wrapper d-flex flex-column justify-content-center align-items-center"
-    style="min-height: 100vh; background-color: #1B263B">
+<div class="wrapper d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh;">
     <section class="timeline-container container py-5">
         <div class="row mb-5 w-100">
             <div class="col text-center">
@@ -102,8 +101,10 @@
                 <article class="timeline-entry" *ngFor="let exp of experiences; let i = index"
                     [ngClass]="{ '': i % 2 === 0, 'left-aligned': i % 2 !== 0 }">
                     <div class="timeline-entry-inner">
-                        <time class="timeline-time"><span>{{exp.start_date}}</span><span>{{exp.end_date}}</span></time>
-                        <div class="timeline-icon" style="background-color: #778DA9;"><i class="fa fa-exclamation"></i>
+                        <time class="timeline-time" style="color: #9B5DE5"><span
+                                style="color: #9B5DE5">{{exp.start_date}}</span><span
+                                style="color: #9B5DE5">{{exp.end_date}}</span></time>
+                        <div class="timeline-icon" style="background-color: #9B5DE5;"><i class="fa fa-exclamation"></i>
                         </div>
                         <div class="timeline-label">
                             <h4 class="timeline-title">{{exp.job_title}}</h4>

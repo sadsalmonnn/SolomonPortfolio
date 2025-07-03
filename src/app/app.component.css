@@ -1,6 +1,69 @@
-section {
-    min-height: 100vh;
-    /* 60px navbar height */
-    scroll-snap-align: start;
-    /* optional for smooth section snapping */
+/* Background gradient */
+.custom-background {
+    position: relative;
+    background: linear-gradient(to bottom, #1b2b44, #2e4566);
+    overflow: hidden;
+}
+
+/* Bubble container */
+.bg-bubbles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* Bubble style */
+.bubble {
+    position: absolute;
+    top: calc(var(--y) * 100vh);
+    left: calc(var(--x) * 100vw);
+    width: var(--size);
+    height: var(--size);
+    background-color: hsla(var(--hue), 80%, 75%, 0.35);
+    border-radius: 50%;
+    transform: translate(0, 0);
+    opacity: 0;
+    filter: blur(var(--blur-start));
+    box-shadow: 0 0 var(--blur-start) hsla(var(--hue), 80%, 75%, 0.6);
+    animation: float var(--duration) ease-in-out infinite;
+    animation-fill-mode: both;
+    animation-delay: calc(-1s * var(--y));
+    /* Staggered starts */
+    pointer-events: none;
+}
+
+/* Floating and fading animation */
+@keyframes float {
+    0% {
+        transform: translate(0, 0) scale(0.9);
+        opacity: 0;
+        filter: blur(var(--blur-end));
+    }
+
+    10% {
+        opacity: var(--opacity);
+        filter: blur(var(--blur-start));
+    }
+
+    50% {
+        transform: translate(calc(var(--dx) * 0.5), calc(var(--dy) * 0.5)) scale(1);
+        opacity: var(--opacity);
+        filter: blur(var(--blur-start));
+    }
+
+    90% {
+        opacity: var(--opacity);
+        filter: blur(var(--blur-end));
+    }
+
+    100% {
+        transform: translate(var(--dx), var(--dy)) scale(1.2);
+        opacity: 0;
+        filter: blur(var(--blur-end));
+    }
 }

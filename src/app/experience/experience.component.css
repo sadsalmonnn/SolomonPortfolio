@@ -228,12 +228,13 @@
     -moz-border-radius: 21px;
     border-radius: 21px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:hover {
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label.bg-red {

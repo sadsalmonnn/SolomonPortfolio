@@ -12,20 +12,26 @@ export class ProjectsComponent {
   projects: Project[] = [{
     id: 1,
     name: 'Digital Drawing Application',
-    description: 'Built a dynamic drawing application, applying OOP principles and SOLID design patterns to ensure scalability and maintainability. Led Agile sprints with a strong focus on testing through JUnit, improving code accuracy, performance, and delivery speed while exceeding 120% of project milestones. Collaborated cross-functionally to integrate front-end and back-end components, optimizing UI responsiveness and application performance through continuous feedback and refinement.',
-    tags: ['Java', 'JavaFX', 'CSS', 'JUnit']
+    description: 'A JavaFX-based paint application built with MVC and Observer patterns, supporting shape drawing, freehand tools, editing features, and image file operations.',
+    tags: ['Java', 'JavaFX', 'CSS', 'JUnit'],
+    picture: 'assets/expimages/drawing-app.png',
+    github: 'https://github.com/sadsalmonnn/Digital-Drawing-Application.git'
   },
   {
     id: 2,
     name: 'Unix Shell & Client-Server Interface',
-    description: 'Developed a modular Unix shell in C with robust input tokenization, dynamic environment variable expansion, and built-in command execution, emphasizing memory safety and scalability. Utilized POSIX-compliant system calls and process control mechanisms to support execution of built-in and external commands, including background processing and comprehensive error handling. Implemented socket-based communication for reliable client-server interactions with a Makefile for automated builds and streamlined development.',
-    tags: ['C', 'POSIX APIs', 'UNIX sockets', 'Bash']
+    description: 'Mysh is a lightweight Unix-like shell written in C, featuring command parsing, built-in commands, piping, and signal handling. It also includes networking capabilities with a client-server chat system.',
+    tags: ['C', 'POSIX APIs', 'UNIX sockets', 'Bash'],
+    picture: 'assets/expimages/mysh.png',
+    github: 'https://github.com/sadsalmonnn/Mysh-Unix-Shell.git'
   },
   {
     id: 3,
     name: 'Hierarchical Treemap Data Visualization',
-    description: 'Implemented efficient tree-based data structures to represent hierarchical datasets and designed a recursive treemap algorithm for dynamic, geometric visualization of complex data.Developed an interactive file system visualization tool using Python’s OS module and object-oriented programming, enabling intuitive exploration and management of diverse data types.',
-    tags: ['Python', 'OS']
+    description: 'An interactive Python tool that visually represents your file system using a dynamic treemap layout, allowing intuitive exploration, editing, and deletion of files.',
+    tags: ['Python', 'OS'],
+    picture: 'assets/expimages/treemap.png',
+    github: ''
   }
   ];
 

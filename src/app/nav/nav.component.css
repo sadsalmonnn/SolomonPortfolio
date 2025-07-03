@@ -1,15 +1,52 @@
-app-nav {
+.custom-navbar {
+    background-color: #1b263b;
     height: 60px;
-    /* or your navbar height */
-    flex-shrink: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
-/* or if fixed position */
-app-nav {
+/* Container stays fixed under navbar */
+.scroll-progress-container {
     position: fixed;
-    top: 0;
+    top: 60px;
+    /* match navbar height */
     left: 0;
-    right: 0;
-    height: 60px;
-    z-index: 1000;
+    width: 100%;
+    height: 3px;
+    z-index: 999;
+}
+
+/* Bar animates from left to right */
+.scroll-progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    transition: width 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 0 8px rgba(155, 93, 229, 0.2);
+}
+
+.itemcustom:hover {
+    color: #9b5de6;
+    cursor: pointer;
+}
+
+.itemcustom {
+    position: relative;
+}
+
+.itemcustom::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #9b5de6;
+    transition: width 0.3s ease;
+}
+
+.itemcustom:hover::after {
+    width: 100%;
 }
