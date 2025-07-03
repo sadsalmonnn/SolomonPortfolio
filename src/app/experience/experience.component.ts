@@ -16,7 +16,7 @@ export class ExperienceComponent {
       start_date: 'Sep 2021',
       end_date: 'Jan 2022',
       description:
-        'Assisted students with practical engineering tasks, bridging theoretical concepts and real-world application. Delivered foundational lectures in network engineering and digital logic, supported by engaging assessments and detailed feedback to foster student academic development.',
+        'Supported students with hands-on engineering tasks and taught foundational networking and digital logic concepts. Delivered lectures, created assessments, and provided feedback to enhance learning outcomes.',
       location: 'Oakville, ON'
     },
     {
@@ -26,7 +26,7 @@ export class ExperienceComponent {
       start_date: 'May 2025',
       end_date: 'Aug 2025',
       description:
-        'Managing the discharge of high-security financial instruments, verifying legal, financial, and property documents, while escalating issues through internal RBC systems and communication channels. Proficiently operating enterprise-level portals and secure banking systems, including Sales Platform, Linx Portal and OLMS, demonstrating adaptability to internal tools and cross-platform workflows. Consistently meeting weekly processing quotas, handling sensitive client data with privacy and precision.',
+        'Managed high-security financial instrument processing and document verification, ensuring compliance and escalating issues through internal systems. Skilled in operating enterprise banking platforms while maintaining accuracy and data confidentiality under strict deadlines.',
       location: 'Toronto, ON'
     }
   ];

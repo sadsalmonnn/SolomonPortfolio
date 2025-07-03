@@ -1,28 +1,22 @@
-<div class="card shadow-lg h-100 border-0"
-    style="max-width: 100%; width: 100%; min-width: 300px; background-color: #212f45;">
+<div class="custom-card-wrapper d-flex flex-column h-100">
+    <!-- Image -->
+    <img *ngIf="project.picture" [src]="project.picture" alt="{{ project.name }} image" class="card-image" />
 
-    <!-- Project Image -->
-    <img *ngIf="project.picture" [src]="project.picture" alt="{{ project.name }} image" class="card-img-top"
-        style="object-fit: cover; height: 200px;">
-
-    <div class="card-body d-flex flex-column justify-content-between">
+    <!-- Content -->
+    <div class="card-content flex-grow-1 d-flex flex-column justify-content-between">
         <div>
-            <!-- Project Name -->
             <h5 class="card-title fw-bold">{{ project.name }}</h5>
-
-            <!-- Project Description -->
             <p class="card-text">{{ project.description }}</p>
         </div>
 
-        <!-- GitHub Button -->
         <a *ngIf="project.github" [href]="project.github" target="_blank" rel="noopener noreferrer"
             class="btn cta-button mt-3">
             <i class="bi bi-github"></i> More on GitHub
         </a>
     </div>
 
-    <!-- Tags -->
-    <div class="card-footer border-0 pt-0" style="background-color: #212f45;">
+    <!-- Tags (Still inside card) -->
+    <div class="card-tags mt-auto">
         <div class="d-flex flex-wrap justify-content-center gap-2">
             <div *ngFor="let tag of project.tags" class="tag">{{ tag }}</div>
         </div>

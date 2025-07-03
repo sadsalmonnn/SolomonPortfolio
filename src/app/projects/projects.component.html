@@ -10,9 +10,8 @@
 
         <!-- Project Cards Grid -->
         <div class="row justify-content-center g-4">
-            <div class="col-lg-4 col-md-6 d-flex justify-content-center" *ngFor="let project of projects">
-
-                <app-projectcard class="custom-card" [project]="project"></app-projectcard>
+            <div class="col-lg-4 col-md-6" *ngFor="let project of projects">
+                <app-projectcard class="custom-card h-100 w-100" [project]="project"></app-projectcard>
             </div>
         </div>
 

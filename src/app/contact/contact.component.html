@@ -1,0 +1,49 @@
+<div class="d-flex justify-content-center align-items-center py-5 contact-wrapper">
+    <div class="container px-4">
+
+        <!-- Section Title -->
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h5 class="text-uppercase section-title">Contact</h5>
+                <h2 class="contact-heading">Start a Conversation</h2>
+                <p class="contact-subtext">
+                    Got an idea, a question, or just want to say hi? Let’s build something meaningful together.
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-6 text-center contact-info">
+                <p><strong>Prefer direct contact?</strong></p>
+                <p>Email me at <span class="highlight">solomon.adord&#64;gmail.com</span></p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form #contactFormRef="ngForm" (ngSubmit)="onSubmit()" class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name*</label>
+                    <input type="text" class="form-control contact-input" id="name" name="name"
+                        [(ngModel)]="contactForm.name" required />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email*</label>
+                    <input type="email" class="form-control contact-input" id="email" name="email"
+                        [(ngModel)]="contactForm.email" required />
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="form-label">Message*</label>
+                    <textarea class="form-control contact-input" id="message" name="message" rows="5"
+                        [(ngModel)]="contactForm.message" required></textarea>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn submit-button" [disabled]="!contactFormRef.form.valid">
+                        Send Message →
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

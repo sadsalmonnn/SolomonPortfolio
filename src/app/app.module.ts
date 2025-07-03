@@ -12,6 +12,9 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectcardComponent } from './projectcard/projectcard.component';
 import { CustomScrollbarComponent } from './custom-scrollbar/custom-scrollbar.component';
+import { ContactComponent } from './contact/contact.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,14 @@ import { CustomScrollbarComponent } from './custom-scrollbar/custom-scrollbar.co
     ExperienceComponent,
     ProjectsComponent,
     ProjectcardComponent,
-    CustomScrollbarComponent
+    CustomScrollbarComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

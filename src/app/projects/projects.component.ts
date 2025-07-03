@@ -31,7 +31,7 @@ export class ProjectsComponent {
     description: 'An interactive Python tool that visually represents your file system using a dynamic treemap layout, allowing intuitive exploration, editing, and deletion of files.',
     tags: ['Python', 'OS'],
     picture: 'assets/expimages/treemap.png',
-    github: ''
+    github: 'https://github.com/sadsalmonnn/Trees-for-Treemap.git'
   }
   ];
 
